@@ -9,7 +9,7 @@ string[] FillingTheArray(int size)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write("Введите строку: ");
-        array[i] = Convert.ToString(Console.ReadLine());
+        array[i] = Console.ReadLine();
     }
     return array;
 }
