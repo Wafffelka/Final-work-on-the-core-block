@@ -1,5 +1,9 @@
 ﻿Console.Write("Введите размер массива: ");
-int LengthArray = Convert.ToInt32(Console.ReadLine());
+int LengthArray;
+while(!int.TryParse(Console.ReadLine(), out LengthArray))
+{
+    Console.Write("Некорректный ввод! \nВведите размер массива (ЧИСЛО): ");
+}
 string[] InitialArray = FillingTheArray(LengthArray);
 ArrayOutput(CheckingTheLengthOfElements(InitialArray));
 
